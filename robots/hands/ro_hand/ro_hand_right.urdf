@@ -270,7 +270,7 @@
     </inertial>
     <visual>
       <geometry>
-        <box size="0.01 0.01 0.01"/>
+        <box size="0.003 0.003 0.003"/>
       </geometry>
       <material name="tip_color">
         <color rgba="1 0 0 1"/>
@@ -280,7 +280,7 @@
   <joint name="if_tip_joint" type="fixed">
     <parent link="if_distal_link" />
     <child link="if_tip_link" />
-    <origin xyz="0 0 0" rpy="0 0 0" />
+    <origin xyz="-0.046 -0.009 -0.014" rpy="0 0 0" />
   </joint>
   <link
     name="if_connecting_link">
@@ -561,7 +561,7 @@
     </inertial>
     <visual>
       <geometry>
-        <box size="0.01 0.01 0.01"/>
+        <box size="0.003 0.003 0.003"/>
       </geometry>
       <material name="tip_color">
         <color rgba="1 0 0 1"/>
@@ -571,7 +571,7 @@
   <joint name="mf_tip_joint" type="fixed">
     <parent link="mf_distal_link" />
     <child link="mf_tip_link" />
-    <origin xyz="0 0 0" rpy="0 0 0" />
+    <origin xyz="-0.047 -0.007 -0.014" rpy="0 0 0" />
   </joint>
   <link
     name="mf_connecting_link">
@@ -852,7 +852,7 @@
     </inertial>
     <visual>
       <geometry>
-        <box size="0.01 0.01 0.01"/>
+        <box size="0.003 0.003 0.003"/>
       </geometry>
       <material name="tip_color">
         <color rgba="1 0 0 1"/>
@@ -862,7 +862,7 @@
   <joint name="rf_tip_joint" type="fixed">
     <parent link="rf_distal_link" />
     <child link="rf_tip_link" />
-    <origin xyz="0 0 0" rpy="0 0 0" />
+    <origin xyz="-0.046 -0.003 -0.017" rpy="0 0 0" />
   </joint>
   <link
     name="rf_connecting_link">
@@ -1143,7 +1143,7 @@
     </inertial>
     <visual>
       <geometry>
-        <box size="0.01 0.01 0.01"/>
+        <box size="0.003 0.003 0.003"/>
       </geometry>
       <material name="tip_color">
         <color rgba="1 0 0 1"/>
@@ -1153,7 +1153,7 @@
   <joint name="lf_tip_joint" type="fixed">
     <parent link="lf_distal_link" />
     <child link="lf_tip_link" />
-    <origin xyz="0 0 0" rpy="0 0 0" />
+    <origin xyz="-0.032 -0.004 -0.012" rpy="0 0 0" />
   </joint>
   <link
     name="lf_connecting_link">
@@ -1492,7 +1492,7 @@
     </inertial>
     <visual>
       <geometry>
-        <box size="0.01 0.01 0.01"/>
+        <box size="0.003 0.003 0.003"/>
       </geometry>
       <material name="tip_color">
         <color rgba="1 0 0 1"/>
@@ -1502,6 +1502,6 @@
   <joint name="th_tip_joint" type="fixed">
     <parent link="th_distal_link" />
     <child link="th_tip_link" />
-    <origin xyz="0 0 0" rpy="0 0 0" />
+    <origin xyz="-0.011 -0.023 -0.009" rpy="0 0 0" />
   </joint>
 </robot>

@@ -280,7 +280,7 @@
   <joint name="if_tip_joint" type="fixed">
     <parent link="if_distal_link" />
     <child link="if_tip_link" />
-    <origin xyz="-0.048 -0.005 -0.014" rpy="0 0 0" />
+    <origin xyz="-0.047 -0.004 -0.013" rpy="0 0 0" />
   </joint>
   <link
     name="if_connecting_link">
@@ -571,7 +571,7 @@
   <joint name="mf_tip_joint" type="fixed">
     <parent link="mf_distal_link" />
     <child link="mf_tip_link" />
-    <origin xyz="-0.048 -0.008 -0.014" rpy="0 0 0" />
+    <origin xyz="-0.047 -0.007 -0.014" rpy="0 0 0" />
   </joint>
   <link
     name="mf_connecting_link">
@@ -1153,7 +1153,7 @@
   <joint name="lf_tip_joint" type="fixed">
     <parent link="lf_distal_link" />
     <child link="lf_tip_link" />
-    <origin xyz="-0.032 -0.012 -0.014" rpy="0 0 0" />
+    <origin xyz="-0.032 -0.01 -0.012" rpy="0 0 0" />
   </joint>
   <link
     name="lf_connecting_link">
