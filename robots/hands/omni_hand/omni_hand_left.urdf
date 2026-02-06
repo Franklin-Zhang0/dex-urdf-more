@@ -80,7 +80,7 @@
     <parent link="thumb_metacarpals_base1"/>
     <child link="thumb_metacarpals_base2"/>
     <axis xyz="0 -1 0"/>
-    <limit effort="0.317" lower="0" upper="1.22" velocity="2.33"/>
+    <limit effort="0.317" lower="-1.22" upper="0" velocity="2.33"/>
   </joint>
   <link name="thumb_metacarpals">
     <visual>
