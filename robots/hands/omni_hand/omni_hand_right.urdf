@@ -52,8 +52,8 @@
     <origin rpy="-2.0246 0 0" xyz="-0.00148 0.022278 0.04025"/>
     <parent link="hand_base_link"/>
     <child link="thumb_metacarpals_base1"/>
-    <axis xyz="1 0 0"/>
-    <limit effort="0.134" lower="0" upper="0.66" velocity="2.38"/>
+    <axis xyz="-1 0 0"/>
+    <limit effort="0.134" lower="-0.66" upper="0" velocity="2.38"/>
   </joint>
   <link name="thumb_metacarpals_base2">
     <visual>
