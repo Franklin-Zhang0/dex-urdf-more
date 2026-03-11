@@ -1,0 +1,41 @@
+digraph G {
+node [shape=box];
+"base_link" [label="base_link"];
+"base_offset" [label="base_offset"];
+"index_prox" [label="index_prox"];
+"index_dist" [label="index_dist"];
+"little_prox" [label="little_prox"];
+"little_dist" [label="little_dist"];
+"middle_prox" [label="middle_prox"];
+"middle_dist" [label="middle_dist"];
+"ring_prox" [label="ring_prox"];
+"ring_dist" [label="ring_dist"];
+"thumb_prox_base" [label="thumb_prox_base"];
+"thumb_prox" [label="thumb_prox"];
+"thumb_dist" [label="thumb_dist"];
+node [shape=ellipse, color=blue, fontcolor=blue];
+"base_link" -> "BASE_OFFSET" [label="xyz: 0 0 0.0302 \nrpy: 0.0349066 -0 0"]
+"BASE_OFFSET" -> "base_offset"
+"base_offset" -> "indexMCP" [label="xyz: -0.00066821 0.033041 0.11614 \nrpy: -0.087266 0 0"]
+"indexMCP" -> "index_prox"
+"index_prox" -> "indexPIP" [label="xyz: 0.0012095 0 0.027992 \nrpy: 0 -0 0"]
+"indexPIP" -> "index_dist"
+"base_offset" -> "littleMCP" [label="xyz: -0.00067852 -0.025809 0.11521 \nrpy: 0.05236 -0 -0.00010364"]
+"littleMCP" -> "little_prox"
+"little_prox" -> "littlePIP" [label="xyz: 0.0009359 0 0.028002 \nrpy: 0 -0 0"]
+"littlePIP" -> "little_dist"
+"base_offset" -> "middleMCP" [label="xyz: -0.00066821 0.013196 0.12284 \nrpy: -0.034907 0 0"]
+"middleMCP" -> "middle_prox"
+"middle_prox" -> "middlePIP" [label="xyz: 0.0009359 0 0.028002 \nrpy: 0 -0 0"]
+"middlePIP" -> "middle_dist"
+"base_offset" -> "ringMCP" [label="xyz: -0.00067368 -0.0065844 0.11852 \nrpy: 0.017453 -0 -0.00017259"]
+"ringMCP" -> "ring_prox"
+"ring_prox" -> "ringPIP" [label="xyz: 0.0009359 0 0.028002 \nrpy: 0 -0 0"]
+"ringPIP" -> "ring_dist"
+"base_offset" -> "thumbCMC" [label="xyz: 0.0078133 0.030812 0.025628 \nrpy: 0 -0 0"]
+"thumbCMC" -> "thumb_prox_base"
+"thumb_prox_base" -> "thumbMCP" [label="xyz: 0.0081692 0.011981 0.00275 \nrpy: -1.4249 -0 -0.61087"]
+"thumbMCP" -> "thumb_prox"
+"thumb_prox" -> "thumbPIP" [label="xyz: 0 -0.0061 0.0827 \nrpy: 0 -0 0"]
+"thumbPIP" -> "thumb_dist"
+}
